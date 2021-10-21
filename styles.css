@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(235, 235, 235, 0.685);
+  }
+
+  #do { 
+    position: relative; 
+    top: -200px;
+    left:900px;
+    width: 500px; 
+    height: 200px;
+    background-color: #fafafa; 
+    border: solid 3px #000000; 
+  } 
+  #se { 
+    position: absolute; 
+    bottom: 40px;
+    left: 40px;
+    background-color: #fafafa; 
+    border: solid 3px #000000; 
+  }
+
+  input:valid {
+    border: 3px solid green;
+  }
+  input:not(:focus):placeholder-shown:required{
+    border: 3px solid orange;
+  }
+  input:not(placeholder-shown):invalid {
+    border: 3px solid red;
+  }
